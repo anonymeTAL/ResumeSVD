@@ -9,7 +9,7 @@
 
 2. Téléchargez le fichier github ResumeSVD.py, et placez-le à la **racine du dossier ResumeSVD**.
 
-3. Vous devez avoir les paquets des exigences.txt avec au moins la même version sur les paquets les plus importants qui sont : **gensim==3.8.3 / scipy==1.6.3 / rouge-score==0.0.4 / sklearn==0.17.2 / nltk==3.5 / numpy==1.19.2**.
+3. Vous devez avoir les paquets des requirements.txt avec au moins la même version sur les paquets les plus importants qui sont : **gensim==3.8.3 / scipy==1.6.3 / rouge-score==0.0.4 / sklearn==0.17.2 / nltk==3.5 / numpy==1.19.2**.
 
 4. Vous pouvez maintenant exécuter les expériences à partir de la racine de votre dossier ResumeSVD comme suit :  
 ```
@@ -67,7 +67,7 @@ Dans ce cas, ajoutez simplement :
 --word_embedding_path "./Word Embedding Model/my_word_embedding.pkl"
 ```
 
-Si vous souhaitez uniquement utiliser notre notation Rouge, vous devrez utiliser : python SummVD.py --dataset_name "dataset_name" --scoring True  
+Si vous souhaitez uniquement utiliser notre évaluation Rouge, vous devrez utiliser : python SummVD.py --dataset_name "dataset_name" --scoring True  
 Avec le jeu de données ajouté comme nom_de_données + "_documents.pkl" et le gold : nom_de_données + "_gold.pkl" dans le dossier Datasets.  
 Vos résumés devront être dans le dossier de sortie comme "nom_documents.txt".
 
