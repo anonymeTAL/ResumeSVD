@@ -67,7 +67,7 @@ Dans ce cas, ajoutez simplement :
 --word_embedding_path "./Word Embedding Model/my_word_embedding.pkl"
 ```
 
-Si vous souhaitez uniquement utiliser notre évaluation Rouge, vous devrez utiliser : python SummVD.py --dataset_name "dataset_name" --scoring True  
+Si vous souhaitez uniquement utiliser notre évaluation Rouge, vous devrez utiliser : python ResumeSVD.py --dataset_name "dataset_name" --scoring True  
 Avec le jeu de données ajouté comme nom_de_données + "_documents.pkl" et le gold : nom_de_données + "_gold.pkl" dans le dossier Datasets.  
 Vos résumés devront être dans le dossier de sortie comme "nom_documents.txt".
 
