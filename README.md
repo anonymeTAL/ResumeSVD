@@ -48,18 +48,6 @@ Nous avons obtenu les temps suivants en utilisant CNN et la concaténation de 20
 
 ## Fonctions expérimentales :
 
-Pour exécuter le jeu de données complet, pour size_output mettre la valeur 0, une valeur personnalisée prendra les n premiers documents et abstracts du jeu de données.
-
-Si vous voulez essayer un jeu de données personnalisé, vous devrez l'appeler : nom_du_document + "_documents.pkl" et le gold : nom_du_document + "_gold.pkl". Vous pourrez ensuite l'exécuter avec :  
-```
---dataset_name "dataset_name" --nb_sentences n --heuristic_rate xxx  
-```
-heuristic_rate (optionnel) signifie xxx * len(documents) pour choisir automatiquement les paramètres. Par défaut, il est fixé à 0.004. Arrangez-vous pour avoir au moins 15 exemples ou plus afin d'obtenir les meilleurs résultats.  
-Les données .pkl doivent fonctionner avec :  
-```
-documents = pickle.load(open(dataset_name + "_documents.pkl", "rb"))
-gold = pickle.load(open(nom_de_données + "_gold.pkl", "rb"))
-```
 
 Si vous voulez essayer une intégration de mots personnalisée, elle doit être au format .pkl. Elle doit fonctionner comme suit : wordembedding["word"] => vector.  
 Dans ce cas, ajoutez simplement :  
