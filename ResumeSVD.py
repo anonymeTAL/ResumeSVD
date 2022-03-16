@@ -767,7 +767,7 @@ def launcherSVDCONC(dataset_name, size):
     print("--- %s seconds ---" % (time.time() - start_time))
     
 def clus_heuristic(model, articles, abstracts, dataset_name, size, numberSentencesOP = 0, step = -10, 
-             kd = False, ordreClus = "avant", paramfile = "heuristic"): #parametersAvant300D parametersApresKD
+             kd = False, ordreClus = "avant", paramfile = "data"): #parametersAvant300D parametersApresKD
     
     if os.path.isfile('./Datasets/{}.pkl'.format(paramfile)) == True:
         file = open('./Datasets/{}.pkl'.format(paramfile), "rb") # faudra décommenter en dessous et mettre rb
